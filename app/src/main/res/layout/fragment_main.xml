@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://-schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="67dp"
+    tools:context=".ui.fragments.Main.MainFragment"
+    >
+
+    <ImageView
+        android:layout_width="47dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/illustration"
+        android:src="@drawable/ic_ar_tut" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_main_type"
+            android:text="@string/questions_amount" />
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/questions_amount"
+            tools:ignore="HardcodedText"
+            tools:text="0" />
+
+    </LinearLayout>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/questions_count_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:stepSize="1"
+        android:value="10.0"
+        android:valueFrom="0.0"
+        android:valueTo="20"
+        app:labelBehavior="gone"
+        app:thumbColor="@color/purple"
+        app:tickColorActive="@color/purple"
+        app:tickColorInactive="#AEAEAE"
+        app:trackColorActive="@color/purple"
+        app:trackColorInactive="#AEAEAE" />
+
+    <TextView
+        style="@style/tv_main_type"
+        android:text="@string/category" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp" />
+
+    <TextView
+        style="@style/tv_main_type"
+        android:text="@string/difficulty" />
+
+    <Spinner
+        android:id="@+id/difficulty_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_start_btn"
+            style="@style/main_btn_start"
+            android:text="@string/start"
+            app:cornerRadius="6dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

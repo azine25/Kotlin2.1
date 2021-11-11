@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kotlin2.1</string>
+    <string name="illustration">Illustration</string>
+    <string name="questions_amount">Questions_amount</string>
+    <string name="category">Category</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="start">Start</string>
+    <string name="hello_blank_fragment">Hello_blank_fragment</string>
+    <string name="settings">Settings</string>
+    <string name="history">History</string>
+    <string name="main">Main</string>
+</resources>

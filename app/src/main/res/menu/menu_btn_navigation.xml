@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/mainFragment"
+    android:title="@string/main"
+    android:icon="@drawable/ic_shape"
+    />
+    <item
+        android:id="@+id/historyFragment"
+        android:title="@string/history"
+        android:icon="@drawable/ic_group1"
+        />
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_group"
+        />
+</menu>
