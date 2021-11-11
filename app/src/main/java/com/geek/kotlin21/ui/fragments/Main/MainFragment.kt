@@ -70,5 +70,4 @@ class MainFragment : Fragment() {
     private fun getQuestions() {
 
     }
-
 }
